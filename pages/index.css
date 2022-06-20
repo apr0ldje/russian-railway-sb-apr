@@ -1,3 +1,47 @@
+@import url(../blocks/page/page.css);
+
+@import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__lang-links/header__lang-links.css);
+@import url(../blocks/header/__lang-link/header__lang-link.css);
+
+@import url(../blocks/lead/lead.css);
+@import url(../blocks/lead/__title/lead__title.css);
+@import url(../blocks/lead/__subtitle/lead__subtitle.css);
+@import url(../blocks/lead/__image/lead__image.css);
+@import url(../blocks/lead/__caption/lead__caption.css);
+
+@import url(../blocks/intro/intro.css);
+@import url(../blocks/intro/__title/intro__title.css);
+@import url(../blocks/intro/__text/intro__text.css);
+@import url(../blocks/intro/__list/intro__list.css);
+
+@import url(../blocks/photo-grid/photo-grid.css);
+@import url(../blocks/photo-grid/__item/photo-grid__item.css);
+
+@import url(../blocks/places/places.css);
+@import url(../blocks/place/place.css);
+@import url(../blocks/place/__title/place__title.css);
+@import url(../blocks/place/__image/place__image.css);
+@import url(../blocks/place/__website/place__website.css);
+@import url(../blocks/place/__url-heading/place__url-heading.css);
+@import url(../blocks/place/__link/place__link.css);
+@import url(../blocks/place/__paragraphs/place__paragraphs.css);
+@import url(../blocks/place/__paragraph/place__paragraph.css);
+
+@import url(../blocks/cover/cover.css);
+@import url(../blocks/cover/__head/cover__head.css);
+@import url(../blocks/cover/__background/cover__background.css);
+@import url(../blocks/cover/__overlay/cover__overlay.css);
+@import url(../blocks/cover/__title/cover__title.css);
+@import url(../blocks/cover/__subtitle/cover__subtitle.css);
+
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/footer/__links/footer__links.css);
+@import url(../blocks/footer/__link/footer__link.css);
+@import url(../blocks/footer/__copyright/footer__copyright.css);
+
+
 @font-face {
     font-family: 'Inter';
     font-style: normal;
@@ -30,371 +74,7 @@
 
 
 
-.page {
-    background-color: #2A2C2F;
-    margin: 0 auto;
-}
 
-.header {
-    display: flex;
-    justify-content: space-between;
-    padding: 28px 48px 0;
-}
-
-.header__logo {
-    background-image: url(../images/header-logo.svg);
-    width: 176px;
-    height: 52px;
-}
-
-.header__lang-links {
-    display: flex;
-    align-items: flex-end;
-}
-
-.header__lang-link {
-    color: white;
-    padding-right: 18px;
-}
-
-.header__lang-link:last-child {
-    text-decoration: none;
-    padding-right: 0;
-}
-
-
-/*путешествие по Росии картинка конченая */
-
-.lead {
-    padding-top: 56px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    max-width: 984px;
-}
-
-.lead__title {
-    margin: 0 auto;
-    padding: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 96px;
-    line-height: 100px;
-    text-align: center;
-    color: #FFFFFF;
-    max-width: 720px;
-}
-
-.lead__title {
-    max-width: 720px;
-}
-
-.lead__subtitle {
-    max-width: 640px;
-}
-
-.lead__subtitle {
-    margin: 0 auto;
-    padding-top: 32px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 36px;
-    text-align: center;
-    color: #FFFFFF;
-    max-width: 640px;
-}
-
-.lead__image {
-    margin: auto;
-    padding-top: 64px;
-    width: 100%;
-}
-
-.lead__caption {
-    margin: 0;
-    padding: 8px 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 14px;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-
-
-
-
-
-/*Чего мы там не видели*/
-
-.intro {
-    padding-top: 92px;
-    margin-left: 148px;
-}
-
-.intro__title {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 54px;
-    line-height: 58px;
-    color: #FFFFFF;
-}
-
-.intro__text {
-    margin: 0;
-    padding: 40px 0 0;
-    max-width: 690px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 163%;
-    color: #FFFFFF;
-}
-
-.intro__list {
-    margin: 0;
-    padding: 33px 0 0;
-    list-style-type: none;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 12px;
-    line-height: 18px;
-    color: #FFFFFF;
-}
-
-.photo-grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap: 16px;
-    padding: 92px 48px 0;
-}
-
-.photo-grid__item {
-    max-width: 100%;
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-
-
-
-.places {
-    display: flex;
-    flex-direction: column;
-    max-width: 984px;
-    margin: 92px auto 0;
-}
-
-.place {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding-top: 80px;
-}
-
-.place:first-child {
-    padding-top: 0;
-}
-
-.place__title {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 76px;
-    color: #FFFFFF;
-    padding-bottom: 48px;
-    align-self: flex-end;
-}
-
-.place__image {
-    grid-column: 1/2;
-    grid-row: 2/4;
-
-    max-width: 100%;
-}
-
-.place__website {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    align-self: flex-end;
-    padding-bottom: 48px;
-    margin-left: 40px;
-}
-
-.place__url-heading {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 12px;
-    letter-spacing: 2px;
-    color: #AAAAAA;
-    margin: 0;
-    padding: 0;
-}
-
-.place__link {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-decoration-line: underline;
-    color: #FFFFFF;
-}
-
-.place__link:hover {
-    color: #FFFFFF;
-    opacity: 0.8;
-}
-
-.place__paragraphs {
-    display: flex;
-    flex-direction: column;
-    row-gap: 26px;
-    margin-left: 40px;
-}
-
-.place__paragraph {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 163%;
-    color: #FFFFFF;
-    max-width: 484px;
-    margin: 0;
-    padding: 0;
-}
-
-
-
-
-.cover {
-    margin-top: 92px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    position: relative;
-}
-
-.cover__head {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.cover__background {
-    max-width: 1184px;
-    max-height: 740px;
-
-    height: 100%;
-    width: 100%;
-    z-index: -2;
-}
-
-.cover__overlay {
-    background: #2A2C2F;
-    opacity: 0.3;
-    max-width: 1184px;
-    max-height: 740px;
-
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-}
-
-.cover:hover {
-    background: #2A2C2F;
-    opacity: 0.8;
-    z-index: -1;
-}
-
-.cover__title {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 900;
-    font-size: 72px;
-    line-height: 76px;
-    text-align: center;
-    color: #FFFFFF;
-
-    max-width: 560px;
-    margin: 0 auto;
-}
-
-.cover__subtitle {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 22px;
-    text-align: center;
-    color: #FFFFFF;
-
-    max-width: 360px;
-    margin: 0 auto;
-}
-
-.footer {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 92px;
-    margin: 0 auto 24px;
-    max-height: 18px;
-    max-width: 1184px;
-}
-
-.footer__links {
-    padding: 0;
-    margin: 0;
-    display: flex;
-    list-style: none;
-    gap: 18px;
-}
-
-.footer__link {
-    min-width: 50px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 18px;
-    color: #FFFFFF;
-}
-
-.footer__copyright {
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 16px;
-    text-align: right;
-    color: #FFFFFF;
-}
 
 
 @media screen and (max-width: 425px) {
@@ -605,5 +285,3 @@
         margin: 0 48px 24px;
     }
 }
-
-@media screen and (min-width: 1025px) {}

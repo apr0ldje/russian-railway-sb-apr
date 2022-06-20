@@ -1,0 +1,9 @@
+.header__lang-link {
+    color: white;
+    padding-right: 18px;
+}
+
+.header__lang-link:last-child {
+    text-decoration: none;
+    padding-right: 0;
+}

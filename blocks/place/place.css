@@ -1,0 +1,9 @@
+.place {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 80px;
+}
+
+.place:first-child {
+    padding-top: 0;
+}
