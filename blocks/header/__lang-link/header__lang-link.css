@@ -1,6 +1,7 @@
 .header__lang-link {
     color: white;
     padding-right: 18px;
+    font-family: 'Inter';
 }
 
 .header__lang-link:last-child {

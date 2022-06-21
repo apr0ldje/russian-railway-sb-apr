@@ -1,0 +1,10 @@
+.cover__link {
+    max-width: 1184px;
+    max-height: 740px;
+
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+
+    background-image: url(../../images/cover-trains.jpg);
+}

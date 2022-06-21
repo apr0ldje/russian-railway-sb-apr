@@ -4,3 +4,27 @@
     row-gap: 26px;
     margin-left: 40px;
 }
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .place__paragraphs {
+        margin-left: 32px;
+    }
+
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+
+    .place__paragraphs {
+        margin-left: 28px;
+    }
+    
+}
+
+@media screen and (max-width: 425px) {
+    .place__paragraphs {
+        padding: 32px 16px 0;
+        row-gap: 26px;
+        margin-left: 0;
+    }
+}
