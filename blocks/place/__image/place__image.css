@@ -2,7 +2,10 @@
     grid-column: 1/2;
     grid-row: 2/4;
 
-    max-width: 100%;
+    max-width: 460px;
+    width: 100%;
+    object-fit: fill;
+    box-sizing: border-box;
 }
 
 @media screen and (max-width: 425px) {
@@ -10,4 +13,13 @@
     .place__image {
         padding-top: 32px;
     }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+    .place__image {
+        margin-left: 24px;
+        max-width: 340px;
+    }
+    
 }

@@ -12,11 +12,3 @@
     }
 }
 
-@media screen and (max-width: 425px) {
-    
-    .places {
-        display: flex;
-        flex-direction: column;
-    }
-}
-

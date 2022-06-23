@@ -2,19 +2,24 @@
     margin: 92px auto 0;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     box-sizing: border-box;
 
     max-width: 1184px;
-    min-height: 480px;
+    width: 100%;
+    height: 62.5vw;
 
-    background-image: url(../../../images/cover-trains.jpg);
+    background-image: url(../../images/cover-trains.jpg);
     background-size: cover;
     background-repeat: no-repeat;
 }
 
 .cover:hover {
     opacity: 0.8;
-    z-index: -1;
+    z-index: -3;
+}
+
+@media screen and (max-width: 425px) {
+    .cover {
+        margin: 66px auto 0;
+    }
 }

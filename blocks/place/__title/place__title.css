@@ -18,5 +18,16 @@
         line-height: 35px;
         align-self: flex-start;
         padding-bottom: 0;
+        margin-left: 16px;
     }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    
+    .place__title {
+        margin-left: 24px;
+        font-size: 42px;
+        line-height: 46px;
+    }
+    
 }

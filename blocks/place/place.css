@@ -1,6 +1,6 @@
 .place {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(2, minmax(340px, 1fr));
     padding-top: 80px;
 }
 
@@ -18,5 +18,11 @@
     
     .place:first-child {
         padding-top: 0;
+    }
+}
+
+@media screen and (min-width: 425px) and (min-width: 768px) {
+    .place {
+        padding-top: 73px;
     }
 }
