@@ -1,10 +1,13 @@
 .cover__link {
     max-width: 1184px;
-    height: 62.5vw;
     text-decoration: none;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center;   
+}
+
+.cover__link:hover {
+    background-color: rgb(0 0 0 / 30%);
 }
 
