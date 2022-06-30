@@ -1,13 +1,17 @@
 .cover__link {
-    max-width: 1184px;
     text-decoration: none;
 
     display: flex;
     flex-direction: column;
-    justify-content: center;   
+    justify-content: center;
+    
+    background-color: rgb(42 44 47 / 30%);
+
+    max-width: 1184px;
+    width: 100%;
+    padding: 22.5% 0 22.5%;
 }
 
 .cover__link:hover {
-    background-color: rgb(0 0 0 / 30%);
+    background-color: rgb(42 44 47 / 80%);
 }
-
