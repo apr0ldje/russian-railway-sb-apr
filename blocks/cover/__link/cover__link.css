@@ -9,9 +9,22 @@
 
     max-width: 1184px;
     width: 100%;
-    padding: 22.5% 0 22.5%;
+    padding: 20% 0 20%;
 }
 
 .cover__link:hover {
     background-color: rgb(42 44 47 / 80%);
+}
+
+@media screen and (max-width: 425px) {
+
+    .cover__link {
+        padding: 10% 0 10%;
+    }
+}
+
+@media screen and (min-width: 425px) and (max-width: 768px) {
+    .cover__link {
+        padding: 15% 0 15%;
+    }
 }
